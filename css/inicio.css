@@ -166,12 +166,14 @@
 #allLeft {
   position: relative;
   width: 50%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5rem;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 1rem 5rem 1rem 1rem;
-  flex-direction: column;
+  /* flex-direction: column; */
   row-gap: 2rem;
 }
 
@@ -199,20 +201,116 @@
   flex-direction: column;
 }
 
-#cancha {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    border-radius: 1rem;
-}
-
 /* #allLeft select:has(+ option:checked) + img {
-  src: url(../img/east.png);
-  filter: brightness(0);
+    src: url(../img/east.png);
+    filter: brightness(0);
 } */
 
 #cancha {
-    width: 20rem;
-  height: 27rem;
-  background-image: url(../img/cancha.png);
-  background-size: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 26.6rem;
+  background-image: url(../img/titulares.png);
   position: relative;
+  grid-column: 1 / span 2;
+}
+
+#cancha div {
+  position: absolute;
+  z-index: 999;
+}
+
+#jugador1 {
+  left: 68.23px;
+  top: 31.98px;
+  width: 96.15px;
+  height: 121.63px;
+}
+#jugador2 {
+  left: 160.25px;
+  top: 31.98px;
+  width: 96.15px;
+  height: 121.63px;
+}
+#jugador3 {
+  left: 108.97px;
+  top: 155.38px;
+  width: 96.15px;
+  height: 121.63px;
+}
+#jugador4 {
+  left: 68.23px;
+  top: 285.52px;
+  width: 96.15px;
+  height: 121.63px;
+}
+#jugador5 {
+  left: 160.25px;
+  top: 285.52px;
+  width: 96.15px;
+  height: 121.63px;
+}
+
+#west,
+#east {
+  display: none;
+}
+
+#westLabel,
+#eastLabel {
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: coolvetica;
+  letter-spacing: 0.5rem;
+}
+
+#west:checked + #westLabel {
+  color: #e6de6e;
+}
+
+#east:checked + #eastLabel {
+  color: #dae66e;
+}
+
+#west:checked ~ #cancha #jugador1 {
+  background: url(../img/titulares.png) 251px 393.0555px;
+}
+
+#west:checked ~ #cancha #jugador2 {
+  background: url(../img/titulares.png) 159px 393.0555px;
+}
+
+#west:checked ~ #cancha #jugador3 {
+  background: url(../img/titulares.png) 211px 269.645px;
+}
+
+#west:checked ~ #cancha #jugador4 {
+  background: url(../img/titulares.png) 251px 139.45px;
+}
+
+#west:checked ~ #cancha #jugador5 {
+  background: url(../img/titulares.png) 159px 139.45px;
+}
+
+#east:checked ~ #cancha #jugador1 {
+  background: url(../img/titulares.png) 251px 1243.0555px;
+}
+
+#east:checked ~ #cancha #jugador2 {
+  background: url(../img/titulares.png) 159px 1243.0555px;
+}
+
+#east:checked ~ #cancha #jugador3 {
+  background: url(../img/titulares.png) 211px 1120.645px;
+}
+
+#east:checked ~ #cancha #jugador4 {
+  background: url(../img/titulares.png) 251px 991.45px;
+}
+
+#east:checked ~ #cancha #jugador5 {
+  background: url(../img/titulares.png) 159px 991.45px;
 }
