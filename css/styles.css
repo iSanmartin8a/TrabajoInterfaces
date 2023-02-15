@@ -1,0 +1,122 @@
+@import url(fonts.css);
+@import url(navbar.css);
+@import url(footer.css);
+@import url(allstar.css);
+
+#content {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(105deg, #6e99e6, #093c94);
+}
+
+#home {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#homeRight {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 5rem 1rem 1rem;
+  flex-direction: column;
+}
+
+#homeLeft {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem 1rem 8rem;
+}
+
+#homeLeft img {
+  width: 30rem;
+  height: 25rem;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#imgBehind {
+  position: relative;
+  filter: opacity(1) brightness(0.4);
+}
+
+#imgTop {
+  position: relative;
+  top: 8rem;
+  left: -12rem;
+}
+
+#homeRight {
+  font-family: coolvetica;
+  text-align: end;
+}
+
+#homeRight #title {
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+#homeRight #subtitle {
+  font-size: 4rem;
+  color: white;
+  text-shadow: -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0) 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
+#navbar div a {
+  text-decoration: none;
+  color: rgb(224, 224, 224);
+}
+
+#details {
+  grid-column: 1;
+  width: 15rem;
+}
+
+#info {
+  grid-column: 3;
+  grid-row: 3;
+  font-size: 2rem;
+}
+
+.playerCard {
+  position: relative;
+  left: 50rem;
+  width: 90%;
+  height: 8rem;
+  border: 3px dotted #414141;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1;
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: #4141416c;
+  color: #6e99e6;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.playerCard div {
+  margin-bottom: 2rem;
+}

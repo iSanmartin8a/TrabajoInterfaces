@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
     <div id="content">
-        <div id="navbar">
+        <div id="navbar" class="d-flex flex-row justify-content-center m-auto w-100 fs-5 text-light align-items-center border-bottom">
             <img src="/img/logo.png" id="logo">
-            <div><a href="home.html">Inicio</a></div>
+            <div class="m-4"><a href="home.html">Inicio</a></div>
             <div class="divider"></div>
-            <div><a href="allstar.html">AllStar</a></div>
+            <div class="m-4"><a href="allstar.html">AllStar</a></div>
             <div class="divider"></div>
-            <div><a href="clasificacion.html">Clasificación</a></div>
-            <div class="divider"></div>
-
-            <div>Fechas</div>
-            <div class="divider"></div>
-            <div>Entradas</div>
-            <div class="divider"></div>
-            <div>Noticias</div>
+            <div class="m-4"><a href="clasificacion.html">Clasificación</a></div>
             <div class="divider"></div>
 
-            <div>Equipos</div>
+            <div class="m-4">Fechas</div>
             <div class="divider"></div>
-            <div>Historia</div>
+            <div class="m-4">Entradas</div>
             <div class="divider"></div>
-            <div>Contacto</div>
+            <div class="m-4">Noticias</div>
+            <div class="divider"></div>
+
+            <div class="m-4">Equipos</div>
+            <div class="divider"></div>
+            <div class="m-4">Historia</div>
+            <div class="divider"></div>
+            <div class="m-4">Contacto</div>
         </div>
+        
         <div id="home">
             <div id="homeLeft">
                 <img src="/img/portada2.jpg" alt="" id="imgBehind">
@@ -41,9 +44,11 @@
                 <div id="subtitle">Resultados, Estadísticas y Noticias en Directo</div>
             </div>
         </div>
-        <div id="footer">
+
+        <div id="footer" class="position-absolute bottom-0 w-100 d-flex justify-content-center align-items-center fw-bold text-uppercase text-light">
             Alejandro Sanmartín Borobia a través de CSS
         </div>
+
     </div>
 </body>
 </html>
