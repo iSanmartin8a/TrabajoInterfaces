@@ -201,11 +201,6 @@
   flex-direction: column;
 }
 
-/* #allLeft select:has(+ option:checked) + img {
-    src: url(../img/east.png);
-    filter: brightness(0);
-} */
-
 #cancha {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   border-radius: 1rem;
@@ -214,6 +209,7 @@
   background-image: url(../img/titulares.png);
   position: relative;
   grid-column: 1 / span 2;
+  margin: auto;
 }
 
 #cancha div {
@@ -264,7 +260,24 @@
   font-weight: bold;
   text-transform: uppercase;
   font-family: coolvetica;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+  color: #414141;
+}
+
+#eastLabel {
+  margin: auto;
+  width: fit-content;
+  border: 2px solid #414141;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+
+#westLabel {
+  margin: auto;
+  border: 2px solid #414141;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
 }
 
 #west:checked + #westLabel {
