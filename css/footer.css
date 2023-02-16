@@ -1,10 +1,8 @@
 #footer {
-    height: 5vh;
-    background: #00000031;
-    font-family: coolvetica;
-    letter-spacing: 0.2rem;
-    color: rgb(191, 214, 214);
-    border-top: 1px solid rgba(161, 202, 209, 0.466);
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1), 1px -1px 0 rgba(0, 0, 0, 0.1),
-      -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(0, 0, 0, 0.1);
-  }
+  background: white;
+}
+
+.socials {
+  background: rgb(95, 95, 95) !important;
+  width: 4rem !important;
+}

@@ -1,15 +1,19 @@
 #allstar {
-    width: 70%;
-    height: 80vh;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 15% 15% 70%;
-    grid-template-rows: 5rem 20rem 20rem;
-    row-gap: 1rem;
-    column-gap: 1rem;
-    justify-content: center;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 5% 70%;
+    row-gap: 5%;
     align-items: center;
-    margin: 5rem auto;
+    justify-items: center;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .titular {
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
   
   #cancha {
@@ -17,12 +21,9 @@
     border-radius: 1rem;
     width: 20rem;
     height: 26.6rem;
-    background-image: url(../img/titulares.png);
+    background-image: url(../img/allstar/titulares.png);
     position: relative;
     grid-column: 1 / span 2;
-    margin: auto;
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
   }
   
   #cancha div {
@@ -31,13 +32,13 @@
   }
   
   #jugador1 {
-    left: 68.23px;
+    left: 69.23px;
     top: 31.98px;
     width: 96.15px;
     height: 121.63px;
   }
   #jugador2 {
-    left: 160.25px;
+    left: 161.25px;
     top: 31.98px;
     width: 96.15px;
     height: 121.63px;
@@ -55,7 +56,7 @@
     height: 121.63px;
   }
   #jugador5 {
-    left: 160.25px;
+    left: 161.25px;
     top: 275.52px;
     width: 96.15px;
     height: 121.63px;
@@ -74,120 +75,188 @@
     font-family: coolvetica;
     letter-spacing: 0.3rem;
     color: #414141;
-  }
-  
-  #eastLabel {
-    margin: auto;
-    width: fit-content;
+    width: 8rem;
+    height: 3rem;
     border: 2px solid #414141;
-    padding: 0.5rem 2rem;
     border-radius: 1rem;
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  #westLabel {
-    margin: auto;
-    grid-column: 1;
-    grid-row: 1;
-    border: 2px solid #414141;
-    width: fit-content;
-    padding: 0.5rem 2rem;
-    border-radius: 1rem;
+    text-align: center;
+    padding-top: 2%;
+    transition: 1s;
   }
   
   #west:checked + #westLabel {
     color: #e6de6e;
+    border: 2px solid #e6de6e;
+    background: #414141;
   }
   
   #east:checked + #eastLabel {
     color: #dae66e;
+    border: #e6de6e;
+    border: 2px solid #e6de6e;
+    background: #414141;
   }
   
   #west:checked ~ #cancha #jugador1 {
-    background: url(../img/titulares.png) 250px 393.0555px;
+    background: url(../img/allstar/titulares.png) 250px 393.0555px;
   }
   
   #west:checked ~ #cancha #jugador2 {
-    background: url(../img/titulares.png) 158px 393.0555px;
+    background: url(../img/allstar/titulares.png) 158px 393.0555px;
   }
   
   #west:checked ~ #cancha #jugador3 {
-    background: url(../img/titulares.png) 211px 270.645px;
+    background: url(../img/allstar/titulares.png) 211px 270.645px;
   }
   
   #west:checked ~ #cancha #jugador4 {
-    background: url(../img/titulares.png) 251px 139.45px;
+    background: url(../img/allstar/titulares.png) 251px 139.45px;
   }
   
   #west:checked ~ #cancha #jugador5 {
-    background: url(../img/titulares.png) 158px 149.45px;
+    background: url(../img/allstar/titulares.png) 158px 149.45px;
   }
   
   #east:checked ~ #cancha #jugador1 {
-    background: url(../img/titulares.png) 250px 1243.0555px;
+    background: url(../img/allstar/titulares.png) 250px 1243.0555px;
   }
   
   #east:checked ~ #cancha #jugador2 {
-    background: url(../img/titulares.png) 158px 1243.0555px;
+    background: url(../img/allstar/titulares.png) 158px 1243.0555px;
   }
   
   #east:checked ~ #cancha #jugador3 {
-    background: url(../img/titulares.png) 211px 1121.645px;
+    background: url(../img/allstar/titulares.png) 211px 1121.645px;
   }
   
   #east:checked ~ #cancha #jugador4 {
-    background: url(../img/titulares.png) 251px 991.45px;
+    background: url(../img/allstar/titulares.png) 251px 991.45px;
   }
   
   #east:checked ~ #cancha #jugador5 {
-    background: url(../img/titulares.png) 158px 1001.45px;
+    background: url(../img/allstar/titulares.png) 158px 1001.45px;
   }
   
   #west:checked ~ #cancha #jugador1:hover {
-    background: url(../img/titulares.png) 250px 819.0555px;
+    background: url(../img/allstar/titulares.png) 250px 819.0555px;
   }
   
   #west:checked ~ #cancha #jugador2:hover {
-    background: url(../img/titulares.png) 158px 819.0555px;
+    background: url(../img/allstar/titulares.png) 158px 819.0555px;
   }
   
   #west:checked ~ #cancha #jugador3:hover {
-    background: url(../img/titulares.png) 211px 695.5555px;
+    background: url(../img/allstar/titulares.png) 211px 695.5555px;
   }
   
   #west:checked ~ #cancha #jugador4:hover {
-    background: url(../img/titulares.png) 251px 565.0555px;
+    background: url(../img/allstar/titulares.png) 251px 565.0555px;
   }
   
   #west:checked ~ #cancha #jugador5:hover {
-    background: url(../img/titulares.png) 158px 574.7555px;
+    background: url(../img/allstar/titulares.png) 158px 574.7555px;
   }
   
   #east:checked ~ #cancha #jugador1:hover {
-    background: url(../img/titulares.png) 250px 1668.241px;
+    background: url(../img/allstar/titulares.png) 250px 1668.241px;
   }
   
   #east:checked ~ #cancha #jugador2:hover {
-    background: url(../img/titulares.png) 158px 1668.241px;
+    background: url(../img/allstar/titulares.png) 158px 1668.241px;
   }
   
   #east:checked ~ #cancha #jugador3:hover {
-    background: url(../img/titulares.png) 211px 1546.5555px;
+    background: url(../img/allstar/titulares.png) 211px 1546.5555px;
   }
   
   #east:checked ~ #cancha #jugador4:hover {
-    background: url(../img/titulares.png) 251px 1416.8555px;
+    background: url(../img/allstar/titulares.png) 251px 1416.8555px;
   }
   
   #east:checked ~ #cancha #jugador5:hover {
-    background: url(../img/titulares.png) 158px 1426.8555px;
+    background: url(../img/allstar/titulares.png) 158px 1426.8555px;
   }
   
   #east:checked ~ #cancha #jugador2:hover ~ #donovanDetail {
     opacity: 1;
   }
+
+  #east:checked ~ #cancha #jugador1:hover ~ #embiidDetail {
+    opacity: 1;
+  }
+
+  #east:checked ~ #cancha #jugador3:hover ~ #giannisDetail {
+    opacity: 1;
+  }
+
+  #east:checked ~ #cancha #jugador4:hover ~ #tatumDetail {
+    opacity: 1;
+  }
+
+  #east:checked ~ #cancha #jugador5:hover ~ #irvingDetail {
+    opacity: 1;
+  }
   
   #west:checked ~ #cancha #jugador5:hover ~ #lukaDetail {
     opacity: 1;
+  }
+
+  #west:checked ~ #cancha #jugador4:hover ~ #morantDetail {
+    opacity: 1;
+  }
+
+  #west:checked ~ #cancha #jugador3:hover ~ #lebronDetail {
+    opacity: 1;
+  }
+
+  #west:checked ~ #cancha #jugador2:hover ~ #markanenDetail {
+    opacity: 1;
+  }
+
+  #west:checked ~ #cancha #jugador1:hover ~ #jokicDetail {
+    opacity: 1;
+  }
+
+  .playerCard {
+    position: relative;
+    left: 150%;
+    width: 30rem;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #c4ccdb;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1), 1px -1px 0 rgba(0, 0, 0, 0.1),
+    -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    transition: 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px, rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.63) 100%);
+  }
+
+  #details {
+    grid-column: 1;
+    width: 20rem;
+    -webkit-filter: drop-shadow(5px 5px 0 white) drop-shadow(-1px -1px 0 white);
+    filter: drop-shadow(5px 5px 0 white) drop-shadow(-1px -1px 0 white);
+  }
+
+  #info {
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  
+  #info label {
+    text-align: right;
+    width: 100%;
   }

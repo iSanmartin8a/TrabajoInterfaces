@@ -1,43 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clasificación</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <script src="bootstrap/bootstrap.min.js"></script>
-</head>
-<body>
-    <div id="content">
-        <div id="navbar" class="d-flex flex-row justify-content-center m-auto w-100 fs-5 text-light align-items-center border-bottom">
-            <img src="/img/logo.png" id="logo">
-            <div class="m-4"><a href="home.html">Inicio</a></div>
-            <div class="divider"></div>
-            <div class="m-4"><a href="allstar.html">AllStar</a></div>
-            <div class="divider"></div>
-            <div class="m-4"><a href="clasificacion.html">Clasificación</a></div>
-            <div class="divider"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Utah 2023</title>
 
-            <div class="m-4">Fechas</div>
-            <div class="divider"></div>
-            <div class="m-4">Entradas</div>
-            <div class="divider"></div>
-            <div class="m-4">Noticias</div>
-            <div class="divider"></div>
+        <link rel="stylesheet" href="css/base.css">
 
-            <div class="m-4">Equipos</div>
-            <div class="divider"></div>
-            <div class="m-4">Historia</div>
-            <div class="divider"></div>
-            <div class="m-4">Contacto</div>
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <img src="/img/logo.png" id="logo" class="me-5">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto fw-bold">
+                  <li class="nav-item active">
+                    <a class="nav-link text-light ms-4 me-4" href="/home.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/allstar.html">All Star</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/clasificacion.html">Clasificación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/fechas.html">Fechas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/entradas.html">Entradas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/equipos.html">Equipos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div id="web">
+            <div class="fontGrande titular">Clasificaciones</div>
+            <div class="container w-75 mt-5 text-center d-flex flex-row" id="clasificacion">
+                <table class="table table-light table-striped table-hover table-bordered table-sm table-align-middle m-1">
+                    <caption class="text-light">Clasificación de la NBA</caption>
+                    <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Equipo</th>
+                        <th scope="col">Record</th>
+                        <th scope="col">Conferencia</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Boston Celtics</td>
+                        <td>42-17</td>
+                        <td>Este</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Milwaukee Bucks</td>
+                        <td>40-17</td>
+                        <td>Este</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Denver Nuggets</td>
+                        <td>41-18</td>
+                        <td>Oeste</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Philadelphia 76ers</td>
+                        <td>38-19</td>
+                        <td>Este</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Cleveland Cavaliers</td>
+                        <td>38-23</td>
+                        <td>Este</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Memphis Grizzlies</td>
+                        <td>35-22</td>
+                        <td>Oeste</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Brooklyn Nets</td>
+                        <td>34-24</td>
+                        <td>Este</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Sacramento Kings</td>
+                        <td>32-25</td>
+                        <td>Oeste</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>New York Knicks</td>
+                        <td>33-27</td>
+                        <td>Este</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Phoenix Suns</td>
+                        <td>32-27</td>
+                        <td>Oeste</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Miami Heat</td>
+                        <td>32-27</td>
+                        <td>Este</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Los Angeles Clippers</td>
+                        <td>32-28</td>
+                        <td>Oeste</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Dallas Mavericks</td>
+                        <td>31-29</td>
+                        <td>Oeste</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Minnesota Timberwolves</td>
+                        <td>31-29</td>
+                        <td>Oeste</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>New Orleans Pelicans</td>
+                        <td>30-29</td>
+                        <td>Oeste</td>
+                    </tr>
+                    </tbody>
+                </table>
+    
+                <table class="table table-dark table-striped table-hover table-bordered table-sm table-align-middle m-1">
+                    <caption class="text-light">Clasificación para el All Star</caption>
+                    <thead class="table-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Jugador</th>
+                        <th scope="col">Equipo</th>
+                        <th scope="col">Votos</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Lebron James</td>
+                        <td>Los Angeles Lakers</td>
+                        <td>7,418,116</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Giannis Antetokounmpo</td>
+                        <td>Milwaukee Bucks</td>
+                        <td>6,761,032</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Kevin Durant</td>
+                        <td>Phoenix Suns</td>
+                        <td>6,525,199</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Stephen Curry</td>
+                        <td>Golden State Warriors</td>
+                        <td>5,826,248</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Luka Doncic</td>
+                        <td>Dallas Mavericks</td>
+                        <td>5,566,875</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Jayson Tatum</td>
+                        <td>Boston Celtics</td>
+                        <td>5,221,720</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Joel Embiid</td>
+                        <td>Philadelphia 76ers</td>
+                        <td>4,900,482</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Kyrie Irving</td>
+                        <td>Dallas Mavericks</td>
+                        <td>4,467,232</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Donovan Mitchell</td>
+                        <td>Cleveland Cavaliers</td>
+                        <td>4,440,133</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Anthony Davis</td>
+                        <td>Los Angeles Lakers</td>
+                        <td>4,307,925</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Zion Williamson</td>
+                        <td>New Orleans Pelicans</td>
+                        <td>4,217,393</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Andrew Wiggins</td>
+                        <td>Golden State Warriors</td>
+                        <td>2,432,986</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Jaylen Brown</td>
+                        <td>Boston Celtics</td>
+                        <td>4,416,644</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Ja Morant</td>
+                        <td>Memphis Grizzlies</td>
+                        <td>2,214,793</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>James Harden</td>
+                        <td>Philadelphia 76ers</td>
+                        <td>2,211,447</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
 
-        <div id="footer" class="position-absolute bottom-0 w-100 d-flex justify-content-center align-items-center fw-bold text-uppercase text-light">
-            Alejandro Sanmartín Borobia a través de CSS
-        </div>
+        <footer class="text-center text-lg-start" id="footer">
+            <div class="container d-flex justify-content-center py-5">
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-youtube"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-instagram"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-twitter"></i>
+              </button>
+            </div>
         
-    </div>
-</body>
+            <div class="text-center text-white p-3 bg-secondary text-uppercase">
+              Alejandro Sanmartín con Bootstrap
+            </div>
+      </footer>
+          
+  </body>
+
 </html>

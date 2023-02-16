@@ -1,0 +1,17 @@
+@import url(fonts.css);
+@import url(navbar.css);
+@import url(footer.css);
+@import url(inicio.css);
+@import url(allstar.css);
+
+#web {
+  width: 100%;
+  background: linear-gradient(105deg, #6e99e6, #093c94);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 10%;
+}
+
+#container {
+  margin: auto;
+}

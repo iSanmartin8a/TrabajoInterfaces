@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Star</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <script src="bootstrap/bootstrap.min.js"></script>
-</head>
-<body>
-    <div id="content">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Utah 2023</title>
 
-        <div id="navbar" class="d-flex flex-row justify-content-center m-auto w-100 fs-5 text-light align-items-center border-bottom">
-            <img src="/img/logo.png" id="logo">
-            <div class="m-4"><a href="home.html">Inicio</a></div>
-            <div class="divider"></div>
-            <div class="m-4"><a href="allstar.html">AllStar</a></div>
-            <div class="divider"></div>
-            <div class="m-4"><a href="clasificacion.html">Clasificación</a></div>
-            <div class="divider"></div>
+        <link rel="stylesheet" href="css/base.css">
 
-            <div class="m-4">Fechas</div>
-            <div class="divider"></div>
-            <div class="m-4">Entradas</div>
-            <div class="divider"></div>
-            <div class="m-4">Noticias</div>
-            <div class="divider"></div>
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 
-            <div class="m-4">Equipos</div>
-            <div class="divider"></div>
-            <div class="m-4">Historia</div>
-            <div class="divider"></div>
-            <div class="m-4">Contacto</div>
-        </div>
+    </head>
 
-        <div id="allstar">
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <img src="/img/logo.png" id="logo" class="me-5">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto fw-bold">
+                  <li class="nav-item active">
+                    <a class="nav-link text-light ms-4 me-4" href="/home.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/allstar.html">All Star</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/clasificacion.html">Clasificación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/fechas.html">Fechas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/entradas.html">Entradas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/equipos.html">Equipos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div id="web">
+            <div class="fontGrande titular">Titulares del All Star</div>
+            <div id="allstar" class="container">
                 <input type="radio" name="conf" id="west">
                 <label for="west" id="westLabel">Oeste</label>
+
                 <input type="radio" name="conf" id="east">
                 <label for="east" id="eastLabel">Este</label>
+
                 <div id="cancha">
                     <div id="jugador1"></div>
                     <div id="jugador2"></div>
@@ -48,27 +74,122 @@
                     <div id="jugador5"></div>
                     
                     <div id="donovanDetail" class="playerCard">
-                        <img src="/img/donovanDetail.png" id="details">
-                        <div id="name">Donovan Mitchell</div>
-                        <div id="team">Utah Jazz</div>
-                        <div id="position">Base</div>
+                        <img src="/img/allstar/donovanDetail.png" id="details">
+                        <div id="info">
+                            <label>Donovan Mitchell</label>
+                            <label>Cleveland Cavaliers</label>
+                            <label>Base</label>
+                        </div>
                     </div>
 
                     <div id="lukaDetail" class="playerCard">
-                        <img src="/img/lukaDetail.png" id="details">
-                        <div id="name">Donovan Mitchell</div>
-                        <div id="team">Utah Jazz</div>
-                        <div id="position">Base</div>
+                        <img src="/img/allstar/lukaDetail.png" id="details">
+                        <div id="info">
+                            <label>Luka Doncic</label>
+                            <label>Dallas Mavericks</label>
+                            <label>Base</label>
+                        </div>
+                    </div>
+
+                    <div id="lebronDetail" class="playerCard">
+                        <img src="/img/allstar/lebronDetail.png" id="details">
+                        <div id="info">
+                            <label>Lebron James</label>
+                            <label>Los Angeles Lakers</label>
+                            <label>Ala-pivot</label>
+                        </div>
+                    </div>
+
+                    <div id="irvingDetail" class="playerCard">
+                        <img src="/img/allstar/irvingDetail.png" id="details">
+                        <div id="info">
+                            <label>Kyrie Irving</label>
+                            <label>Dallas Mavericks</label>
+                            <label>Escolta</label>
+                        </div>
+                    </div>
+
+                    <div id="giannisDetail" class="playerCard">
+                        <img src="/img/allstar/giannisDetail.png" id="details">
+                        <div id="info">
+                            <label>Giannis Antetokoumpo</label>
+                            <label>Milwaukee Bucks</label>
+                            <label>Pivot</label>
+                        </div>
+                    </div>
+
+                    <div id="jokicDetail" class="playerCard">
+                        <img src="/img/allstar/jokicDetail.png" id="details">
+                        <div id="info">
+                            <label>Nikola Jokic</label>
+                            <label>Denver Nuggets</label>
+                            <label>Pivot</label>
+                        </div>
+                    </div>
+
+                    <div id="embiidDetail" class="playerCard">
+                        <img src="/img/allstar/embiidDetail.png" id="details">
+                        <div id="info">
+                            <label>Joel Embiid</label>
+                            <label>Philadelphia 76ers</label>
+                            <label>Pivot</label>
+                        </div>
+                    </div>
+
+                    <div id="markanenDetail" class="playerCard">
+                        <img src="/img/allstar/markanenDetail.png" id="details">
+                        <div id="info">
+                            <label>Lauri Markkanen</label>
+                            <label>Utah Jazz</label>
+                            <label>Pivot</label>
+                        </div>
+                    </div>
+
+                    <div id="morantDetail" class="playerCard">
+                        <img src="/img/allstar/morantDetail.png" id="details">
+                        <div id="info">
+                            <label>Ja Morant</label>
+                            <label>Memphis Grizzlies</label>
+                            <label>Base</label>
+                        </div>
+                    </div>
+
+                    <div id="tatumDetail" class="playerCard">
+                        <img src="/img/allstar/tatumDetail.png" id="details">
+                        <div id="info">
+                            <label>Jayson Tatum</label>
+                            <label>Boston Celtics</label>
+                            <label>Escolta</label>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <div id="footer" class="position-absolute bottom-0 w-100 d-flex justify-content-center align-items-center fw-bold text-uppercase text-light">
-            Alejandro Sanmartín Borobia a través de CSS
         </div>
 
-    </div>
-</body>
+        <footer class="text-center text-lg-start" id="footer">
+            <div class="container d-flex justify-content-center py-5">
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-youtube"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-instagram"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-twitter"></i>
+              </button>
+            </div>
+        
+            <div class="text-center text-white p-3 bg-secondary text-uppercase">
+              Alejandro Sanmartín con CSS
+            </div>
+      </footer>
+          
+  </body>
+
 </html>
