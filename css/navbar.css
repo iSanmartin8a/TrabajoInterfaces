@@ -3,7 +3,6 @@
   object-fit: contain;
   filter: brightness(80%);
   transition: 0.5s ease;
-  
 }
 
 #logo:hover {

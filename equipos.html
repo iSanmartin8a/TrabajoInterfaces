@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah 2023</title>
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a href="home.html"><img src="/img/logo.png" id="logo" class="me-5"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto fw-bold">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light ms-4 me-4" href="/home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/allstar.html">All Star</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/clasificacion.html">Clasificación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/fechas.html">Fechas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/entradas.html">Entradas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/equipos.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="web">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/home.html" class="text-light">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page" class="text-light">Equipos</li>
+            </ol>
+          </nav>
+        <div class="fontGrande titular">Equipos de la Liga</div>
+
+        <div class="equipos">
+            <img src="/img/mapa.jpg" usemap="#image-map" class="mapaEquipos">
+            <map name="image-map">
+                <area target="" alt="portland" title="portland" href=""
+                    coords="181,17,366,56,363,69,358,85,366,97,362,115,351,133,348,146,344,176,334,224,101,172,105,139,121,106,133,76,139,24,165,34"
+                    shape="poly" id="portland">
+                <label for="portland">Portland</label>
+                <area target="" alt="minnesota" title="minnesota" href=""
+                    coords="368,57,709,92,675,121,668,152,696,198,637,258,602,225,520,256,489,240,481,209,440,183,436,158,423,150,413,125,372,105,361,83"
+                    shape="poly" id="minnesota">
+                <label for="minnesota">Minnesota</label>
+                <area target="" alt="toronto" title="toronto" href=""
+                    coords="181,2,1123,0,1153,46,1199,38,1198,54,1160,107,1143,110,1139,95,1162,60,1151,53,1105,84,1087,48,1075,52,1067,68,1068,84,1046,119,1021,124,953,157,913,178,894,181,875,189,876,160,898,157,879,127,824,124,792,95,773,70,743,64,716,92,367,57,185,14"
+                    shape="poly" id="toronto">
+                <label for="toronto">Toronto</label>
+                <area target="" alt="boston" title="boston" href=""
+                    coords="1079,193,1048,205,1028,193,1020,127,1046,123,1063,99,1072,59,1083,49,1105,87,1109,99,1069,156,1068,171"
+                    shape="poly" id="boston">
+                <label for="boston">Boston</label>
+                <area target="" alt="knicks" title="knicks" href=""
+                    coords="1017,128,985,141,974,177,931,189,917,226,992,205,1007,217,1007,233,1047,220" shape="poly"
+                    id="knicks">
+                <label for="knicks">Knicks</label>
+                <area target="" alt="sixers" title="sixers" href=""
+                    coords="914,221,904,233,917,283,948,294,991,261,1007,256,1010,236,993,209" shape="poly">
+                <area target="" alt="nets" title="nets" href="" coords="1013,236,1034,227,1013,276,998,263" shape="poly"
+                    id="sixers">
+                <label for="sixers">Philadelphia</label>
+                <area target="" alt="washington" title="washington" href=""
+                    coords="920,288,937,333,958,330,989,328,989,292,996,282,1010,306,1018,288,995,262,950,294"
+                    shape="poly" id="washington">
+                <label for="washington">Washington</label>
+                <area target="" alt="cavaliers" title="cavaliers" href=""
+                    coords="903,230,846,237,822,245,827,316,840,344,921,340,930,319" shape="poly" id="cavaliers">
+                <label for="cavaliers">Cleveland</label>
+                <area target="" alt="hornets" title="hornets" href=""
+                    coords="929,328,940,335,999,333,1009,343,997,364,1010,364,1003,385,932,465,875,411,849,409,898,367,867,367,887,344,920,338"
+                    shape="poly" id="hornets">
+                <label for="hornets">Charlotte</label>
+                <area target="" alt="pistons" title="pistons" href=""
+                    coords="796,228,789,166,809,148,834,153,835,193,850,180,858,205,845,233,804,240" shape="poly"
+                    id="pistons">
+                <label for="pistons">Detroit</label>
+                <area target="" alt="bucks" title="bucks" href=""
+                    coords="677,124,698,123,757,144,760,229,713,230,677,169,669,155" shape="poly" id="bucks">
+                <label for="bucks">Milwaukee</label>
+                <area target="" alt="bulls" title="bulls" href=""
+                    coords="696,204,638,260,692,369,777,352,777,270,801,242,795,237,779,249,756,232,714,234"
+                    shape="poly" id="bulls">
+                <label for="bulls">Chicago</label>
+                <area target="" alt="pacers" title="pacers" href=""
+                    coords="805,240,777,270,778,349,814,334,828,317,823,245" shape="poly" id="pacers">
+                <label for="pacers">Indiana</label>
+                <area target="" alt="grizzlies" title="grizzlies" href=""
+                    coords="827,317,693,370,708,439,805,482,851,450,843,408,897,366,864,365,879,345,841,344"
+                    shape="poly" id="grizzlies">
+                <label for="grizzlies">Memphis</label>
+                <area target="" alt="atlanta" title="atlanta" href=""
+                    coords="848,412,874,410,925,460,919,513,827,511,805,484,854,450" shape="poly" id="atlanta">
+                <label for="atlanta">Atlanta</label>
+                <area target="" alt="orlando" title="orlando" href=""
+                    coords="795,516,920,508,947,562,939,565,902,525,884,529,852,538,799,524" shape="poly" id="orlando">
+                <label for="orlando">Orlando</label>
+                <area target="" alt="miami" title="miami" href=""
+                    coords="904,526,884,528,943,625,962,636,972,617,947,564,920,547" shape="poly" id="miami">
+                <label for="miami">Miami</label>
+                <area target="" alt="pelicans" title="pelicans" href=""
+                    coords="826,509,763,455,707,442,677,437,627,453,655,461,663,551,736,560,790,519" shape="poly"
+                    id="pelicans">
+                <label for="pelicans">New Orleans</label>
+                <area target="" alt="thunder" title="thunder" href=""
+                    coords="501,272,533,245,598,224,633,258,693,368,708,437,627,453,569,448,536,436,532,382,496,378"
+                    shape="poly" id="thunder">
+                <label for="thunder">Oklahoma</label>
+                <area target="" alt="rockets" title="rockets" href="" coords="664,547,612,577,579,518,650,482"
+                    shape="poly" id="rockets">
+                <label for="rockets">Houston</label>
+                <area target="" alt="dallas" title="dallas" href=""
+                    coords="654,456,651,483,571,526,465,488,468,423,446,423,443,374,532,384,535,445" shape="poly"
+                    id="dallas">
+                <label for="dallas">Dallas</label>
+                <area target="" alt="spurs" title="spurs" href=""
+                    coords="610,579,575,614,568,662,491,549,473,548,455,565,393,490,463,491,569,525,594,545"
+                    shape="poly" id="spurs">
+                <label for="spurs">San Antonio</label>
+                <area target="" alt="suns" title="suns" href=""
+                    coords="466,422,464,488,354,487,349,499,220,445,255,340,351,352,386,396,425,421" shape="poly"
+                    id="suns">
+                <label for="suns">Phoenix</label>
+                <area target="" alt="denver" title="denver" href=""
+                    coords="438,426,387,393,352,350,365,256,328,246,365,103,402,120,431,169,479,206,486,238,514,254,500,267,496,374,443,372"
+                    shape="poly" id="denver">
+                <label for="denver">Denver</label>
+                <area target="" alt="utah" title="utah" href="" coords="364,259,350,353,256,339,231,277,238,210,329,225"
+                    shape="poly" id="utah">
+                <label for="utah">Utah</label>
+                <area target="" alt="lakers" title="lakers" href=""
+                    coords="220,442,169,429,163,302,187,272,234,279,256,336" shape="poly" id="lakers">
+                <label for="lakers">Los Angeles</label>
+                <area target="" alt="clippers" title="clippers" href="" coords="121,375,103,312,156,302,171,346,166,404"
+                    shape="poly" id="clippers">
+                <label for="clippers">Los Angeles</label>
+                <area target="" alt="warriors" title="warriors" href=""
+                    coords="139,301,105,308,85,208,101,173,136,183,122,238,123,263" shape="poly" id="warriors">
+                <label for="warriors">San Francisco</label>
+                <area target="" alt="kings" title="kings" href=""
+                    coords="237,210,227,274,187,272,160,297,137,296,121,261,138,186" shape="poly" id="kings">
+                <label for="kings">Sacramento</label>
+            </map>
+        </div>
+
+        <div id="equiposMovil">
+            <img src="/img/mapa.jpg" alt="" id="mapaMovil">
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start" id="footer">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-twitter"></i>
+            </button>
+        </div>
+
+        <div class="text-center text-white p-3 bg-secondary text-uppercase">
+            Alejandro Sanmartín con css
+        </div>
+    </footer>
+
+</body>
+
+</html>

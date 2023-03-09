@@ -12,27 +12,27 @@
 }
 
 #englishH {
-    opacity: 0;
+    display: none;
     position: absolute;
 }
 
 #spanish:checked ~ #historia #spanishH {
-    opacity: 1;
+    display: block;
     position: relative;
 }
 
 #spanish:checked ~ #historia #englishH {
-    opacity: 0;
+    display: none;
     position: absolute;
 }
 
 #english:checked ~ #historia #spanishH {
-    opacity: 0;
+    display: none;
     position: absolute;
 }
 
 #english:checked ~ #historia #englishH {
-    opacity: 1;
+    display: block;
     position: relative;
 }
 
@@ -60,4 +60,24 @@
 
 #language input {
     display: none;
+}
+
+#canvas {
+    width: 307px;
+    height: 282px;
+    border-radius: 100rem;
+    margin: auto;
+    padding: 1rem 1rem 1rem 19rem;
+    background: url('/img/animacion_logos.png');
+    animation: playIdle 1.5s steps(12, end) infinite;
+}
+
+@keyframes playIdle {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: -4000px 0px;
+    }
 }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utah 2023</title>
+
+  <link rel="stylesheet" href="/bulma/bulma.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbarEntradas">
+    <div class="container">
+      <a href="/home.html"><img src="/img/logo.png" id="logo" class="me-5 logoEntradas"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse opcionesNavbar" id="navbarSupportedContent">
+        <ul class="navbar-nav fw-bold">
+          <li class="nav-item active">
+            <a class="nav-link text-light ms-4 me-4" href="/home.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-4" href="/allstar.html">All Star</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-4" href="/clasificacion.html">Clasificación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-4" href="/fechas.html">Fechas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-4" href="/entradas.html">Entradas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-4" href="/noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-4" href="/equipos.html">Equipos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-4" href="/historia.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-4" href="/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="web">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home.html" class="text-light">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page" class="text-light">Entradas</li>
+      </ol>
+    </nav>
+
+    <div class="fontGrande titular mb-5">Entradas disponibles</div>
+
+    <div class="columns is-multiline is-centered cards-container" id="sectioncontainer">
+      <div class="column is-narrow">
+        <article class="message is-black">
+          <div class="message-header">
+            <p>Entrada Básica</p>
+            <button class="delete" aria-label="delete"></button>
+          </div>
+          <div class="message-body">
+            <div class="board-item">
+              <div class="board-item-content"><span>Un día a seleccionar</span></div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Un evento a seleccionar</span></div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>A partir de 100$</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="column is-narrow">
+        <article class="message is-primary">
+          <div class="message-header">
+            <p>Entrada premium</p>
+            <button class="delete" aria-label="delete"></button>
+          </div>
+          <div class="message-body">
+            <div class="board-item">
+              <div class="board-item-content"><span>Acceso todos los días</span></div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Acceso a todos los eventos</span></div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>A partir de 350$</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="column is-narrow">
+        <article class="message is-link">
+          <div class="message-header">
+            <p>Entrada VIP</p>
+            <button class="delete" aria-label="delete"></button>
+          </div>
+          <div class="message-body">
+            <div class="board-item">
+              <div class="board-item-content"><span>Todas las ventajas anteriores</span></div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Meet & Greet con jugadores</span></div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>A partir de 850$</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <img src="/img/tickets.jpg" alt="" class="mt-4 borderedImg">
+      </div>
+
+
+    </div>
+
+    <footer class="text-center text-lg-start" id="footer">
+      <div class="container d-flex justify-content-center py-5">
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+          <i class="fab fa-youtube"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+          <i class="fab fa-instagram"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+          <i class="fab fa-twitter"></i>
+        </button>
+      </div>
+
+      <div class="text-center text-white p-3 bg-secondary text-uppercase">
+        Alejandro Sanmartín con bulma
+      </div>
+    </footer>
+
+</body>
+
+</html>

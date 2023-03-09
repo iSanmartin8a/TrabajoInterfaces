@@ -1,0 +1,155 @@
+.equipos {
+  margin: 5rem auto;
+  width: fit-content;
+}
+
+.mapaEquipos {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.534);
+  box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 1) inset;
+  border-radius: 50px;
+}
+
+.equipos * {
+  margin: auto;
+  width: fit-content;
+}
+
+map label {
+    position: absolute;
+    opacity: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 999;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    left: 48%;
+    bottom: -15%;
+}
+
+#portland:hover+label {
+    opacity: 1;
+}
+
+#minnesota:hover+label {
+    opacity: 1;
+}
+
+#knicks:hover+label {
+    opacity: 1;
+}
+
+#toronto:hover+label {
+    opacity: 1;
+}
+
+#boston:hover+label {
+    opacity: 1;
+}
+
+#lakers:hover+label {
+    opacity: 1;
+}
+
+#miami:hover+label {
+    opacity: 1;
+}
+
+#suns:hover+label {
+    opacity: 1;
+}
+
+#dallas:hover+label {
+    opacity: 1;
+}
+
+#bulls:hover+label {
+    opacity: 1;
+}
+
+#kings:hover+label {
+    opacity: 1;
+}
+
+#pelicans:hover+label {
+    opacity: 1;
+}
+
+#atlanta:hover+label {
+    opacity: 1;
+}
+
+#thunder:hover+label {
+    opacity: 1;
+}
+
+#denver:hover+label {
+    opacity: 1;
+}
+
+#warriors:hover+label {
+    opacity: 1;
+}
+
+#cavaliers:hover+label {
+    opacity: 1;
+}
+
+#pistons:hover+label {
+    opacity: 1;
+}
+
+#hornets:hover+label {
+    opacity: 1;
+}
+
+#orlando:hover+label {
+    opacity: 1;
+}
+
+#utah:hover+label {
+    opacity: 1;
+}
+
+#clippers:hover+label {
+    opacity: 1;
+}
+
+#bucks:hover+label {
+    opacity: 1;
+}
+
+#pacers:hover+label {
+    opacity: 1;
+}
+
+#grizzlies:hover+label {
+    opacity: 1;
+}
+
+#nets:hover+label {
+    opacity: 1;
+}
+
+#rockets:hover+label {
+    opacity: 1;
+}
+
+#spurs:hover+label {
+    opacity: 1;
+}
+
+#sixers:hover+label {
+    opacity: 1;
+}
+
+#equiposMovil {
+    display: none;
+}

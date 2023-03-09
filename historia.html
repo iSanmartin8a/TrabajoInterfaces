@@ -11,17 +11,14 @@
 
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <script src="bootstrap/bootstrap.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-        crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <img src="/img/logo.png" id="logo" class="me-5">
+            <a href="home.html"><img src="/img/logo.png" id="logo" class="me-5"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -62,6 +59,12 @@
     </nav>
 
     <div id="web">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/home.html" class="text-light">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page" class="text-light">Historia</li>
+            </ol>
+          </nav>
         <div class="fontGrande titular">Historia</div>
         <div id="language"> 
             <input type="radio" id="spanish" value="spanish" name="idioma" checked>
@@ -79,7 +82,7 @@
                         exhibición que cuenta
                         con las mejores habilidades y jugadas de los jugadores.</p>
 
-                    <p class="hidden">El All-Star Game se ha convertido en un evento importante para la NBA, que incluye
+                    <p>El All-Star Game se ha convertido en un evento importante para la NBA, que incluye
                         un fin de semana lleno de
                         actividades que incluyen el Concurso de Clavadas (Slam Dunk Contest), el Concurso de Triples
                         (Three-Point
@@ -104,7 +107,7 @@
                         The Eastern Conference team faces the Western Conference team in an exhibition game that counts
                         with the best skills and plays of the players.</p>
 
-                    <p class="hidden">The All-Star Game has become a major event for the NBA, including a weekend full
+                    <p>The All-Star Game has become a major event for the NBA, including a weekend full
                         of
                         activities that include the Slam Dunk Contest, the Three-Point Contest
                         Contest) and the Game of the Stars of the NBA (All-Star Game). The All-Star Game has seen some
@@ -120,6 +123,8 @@
                         Giannis prevailed over Team LeBron (184-175) and Jayson Tatum was named MVP.</p>
                 </div>
             </div>
+
+            <div id="canvas"></div>
         </div>
     </div>
 

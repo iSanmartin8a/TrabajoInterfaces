@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah 2023</title>
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a href="/home.html"><img src="/img/logo.png" id="logo" class="me-5"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto fw-bold">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light ms-4 me-4" href="/home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/allstar.html">All Star</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/clasificacion.html">Clasificación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/fechas.html">Fechas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/entradas.html">Entradas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/equipos.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-4" href="/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="web">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/home.html" class="text-light">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page" class="text-light">Contacto</li>
+            </ol>
+          </nav>
+        <div class="fontGrande titular">Contacto</div>
+        <div class="d-flex flex-row flex-wrap" id="contacto">
+            <div class="w-25 m-5 text-light">
+                <h4>No dude en contactarnos</h4>
+                <p>Si tiene alguna duda o consulta, no dude en contactarnos. Estaremos encantados de ayudarle.</p>
+                <img src="/img/mapa.png" class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="">
+            </div>
+            <form action="https://api.formbucket.com/f/c2K3QTQ" method="post" class="w-50 m-5 text-light fw-bold">
+                <div class="form-group m-5">
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" type="text" name="Name">
+                </div>
+                <div class="form-group m-5">
+                    <label for="email">Email</label>
+                    <input class="form-control" id="email" type="email" name="Email">
+                </div>
+                <div class="form-group m-5">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="Message"></textarea>
+                </div>
+                <input class="btn btn-primary w-50 ms-5" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="text-center text-lg-start" id="footer">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 socials">
+                <i class="fab fa-twitter"></i>
+            </button>
+        </div>
+
+        <div class="text-center text-white p-3 bg-secondary text-uppercase">
+            Alejandro Sanmartín con Bootstrap
+        </div>
+    </footer>
+
+</body>
+
+</html>

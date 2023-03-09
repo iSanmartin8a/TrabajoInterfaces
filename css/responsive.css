@@ -1,0 +1,157 @@
+/* INICIO */
+
+@media (max-width: 768px) {
+    #first div div img {
+        width: 10rem;
+        height: 10rem;
+        left: 5rem;
+        opacity: 0;
+    }
+
+    #homeRight, #homeLeft {
+        width: 90% !important;
+        position: absolute;
+        top: -5rem;
+        padding: 0 !important;
+        margin-top: 2rem;
+    }
+
+    #carouselNoticias {
+        width: 100% !important;
+        height: 10rem !important;
+    }
+
+    #second {
+        margin-top: 0rem !important;
+        padding: 0;
+        margin-bottom: 2rem !important;
+    }
+
+    .fontGrande {
+        font-size: 2rem !important;
+    }   
+
+    #carouselNoticias .carousel-item img {
+        width: 100% !important;
+        height: 9.5rem !important;
+        object-fit: cover;
+    }
+}
+
+/* NAVBAR */
+
+@media (max-width: 768px) {
+    .navbarMovil {
+        width: 90% !important;
+    }
+}
+
+/* ALL STAR */
+
+@media (max-width: 768px) {
+    #web {
+        padding: 5px !important;
+    }
+
+    #allStar {
+        width: 90% !important;
+    }
+
+    #allstar input, #allstar label {
+        font-size: 1rem !important;
+        width: fit-content;
+        margin-bottom: 1rem;
+        margin-left: 8rem;
+        padding: 0;
+        height: fit-content;
+    }
+
+    #cancha {
+        margin-top: 3rem;
+        margin-left: 7rem;
+    }
+
+    .fontGrande {
+        font-size: 2rem !important;
+        margin-top: 5rem;
+    }
+
+    #irvingDetail, #giannisDetail, #tatumDetail, #donovanDetail, #embiidDetail, #jokicDetail, #markanenDetail, #lebronDetail, #morantDetail, #lukaDetail {
+        opacity: 0 !important;
+    }
+
+}
+
+/* CLASIFICACION */
+
+@media (max-width: 768px) {
+    #clasificacion {
+        flex-wrap: wrap;
+        margin: 2rem auto !important;
+        padding: 0;
+    }
+
+    #clasificacion table {
+        width: 60% !important;
+        margin: 0 auto !important;
+        padding: 0;
+    }
+
+    .borderedImg {
+        width: 80% !important;
+        margin: 3rem auto !important;
+    }
+
+    #sectioncontainer {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* NOTICIAS  */
+
+@media (max-width: 768px) {
+    #noticias {
+        margin: 0 !important;
+    }
+
+    .equipos {
+        opacity: 0;
+        display: none;
+    }
+
+    #equiposMovil {
+        display: block;
+        position: relative;
+        top: 30%;
+        left: 10%;
+        margin: 10rem auto;
+    }
+
+    #equiposMovil img {
+        width: 20rem;
+        left: 5rem;
+        border-radius: 1rem;
+        border: 3px solid rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* HISTORIA  */
+
+@media (max-width: 768px) {
+    #canvas {
+        width: 10rem !important;
+        height: 20rem !important;
+        border: 0px !important;
+    }
+}
+
+/* CONTACTO  */
+
+@media (max-width: 768px) {
+    #contacto div, #contacto form {
+        width: 90% !important;
+        margin: 3rem auto !important;
+    }
+}

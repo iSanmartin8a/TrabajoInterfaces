@@ -4,6 +4,9 @@
 @import url(inicio.css);
 @import url(allstar.css);
 @import url(historia.css);
+@import url(equipos.css);
+@import url(entradas.css);
+@import url(responsive.css);
 
 #web {
   width: 100%;

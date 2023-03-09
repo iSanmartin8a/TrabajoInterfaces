@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Utah 2023</title>
 
+  <link rel="stylesheet" href="/bulma/bulma.css">
   <link rel="stylesheet" href="css/base.css">
-
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <script src="bootstrap/bootstrap.min.js"></script>
   <link rel="stylesheet" href="fontawesome/css/all.css">
@@ -16,16 +16,16 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top"  id="navbarEntradas">
     <div class="container">
-      <a href="/home.html"><img src="/img/logo.png" id="logo" class="me-5"></a>
+      <a href="/home.html"><img src="/img/logo.png" id="logo" class="me-5 logoEntradas"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto fw-bold">
+      <div class="collapse navbar-collapse opcionesNavbar" id="navbarSupportedContent">
+        <ul class="navbar-nav fw-bold">
           <li class="nav-item active">
             <a class="nav-link text-light ms-4 me-4" href="/home.html">Inicio</a>
           </li>
@@ -62,64 +62,59 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home.html" class="text-light">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page" class="text-light">Fechas</li>
+        <li class="breadcrumb-item"><a href="/fechas.html" class="text-light">Fechas</a></li>
+        <li class="breadcrumb-item active" aria-current="page" class="text-light">Primer Día</li>
       </ol>
     </nav>
-    <div class="fontGrande titular">Fechas</div>
-    <table class="table table-light table-hover mt-5 mb-5">
-      <thead class="table-dark table-bordered border-dark">
-        <tr>
-          <th scope="col">Día</th>
-          <th scope="col">Fecha</th>
-          <th scope="col">Acontecimiento</th>
-          <th scope="col" class="w-25">Más detalles</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>17 de Febrero</td>
-            <td>Rising Stars</td>
-            <td><a href="/primerDia.html"><i class="fa fa-link"></i> Más información aquí</a></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>18 de Febrero</td>
-          <td>Noche de Concursos</td>
-          <td><a href="/segundoDia.html"><i class="fa fa-link"></i> Más información aquí</a></td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>19 de Febrero</td>
-          <td>Team Lebron vs Team Giannis</td>
-          <td><a href="/tercerDia.html"><i class="fa fa-link"></i> Más información aquí</a></td>
-        </tr>
-      </tbody>
-    </table>
 
-    <div class="row mt-5">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <img src="/img/gallery/gal1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="nba posters" />
-
-        <img src="/img/gallery/gal5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="wembemyama" />
-
-        <img src="/img/gallery/gal4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="utah jazz" />
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="/img/gallery/gal6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="kevin durant en suns" />
-
-        <img src="/img/gallery/gal3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="lebron en el all star" />
-
-        <img src="/img/gallery/gal8.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="retro jerseys" />
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="/img/gallery/gal2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="tatum y embiid" />
-
-        <img src="/img/gallery/gal7.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="stephen curry" />
-
-        <img src="/img/gallery/gal9.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="michael jordan" />
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <figure class="image is-4by3">
+              <img src="/img/rising.jfif" alt="Description">
+            </figure>
+          </div>
+          <div class="column is-6 is-offset-1 has-text-white">
+            <h1 class="title is-2 has-text-white">
+              Rising Stars
+            </h1>
+            <h2 class="subtitle is-4 has-text-white mt-5">
+              El Rising Stars, el partido de novatos, cambió de formato completamente el año pasado. Pasa del
+              tradicional duelo entre rookies (novatos) y sophomores (jugadores de segundo año) de Estados Unidos contra
+              los del resto del mundo a un formato de Final Four con 11 novatos, 10 jugadores de segundo año y 7 más de
+              la G-League.
+            </h2>
+            <br>
+          </div>
+        </div>
+        <table class="table is-bordered">
+          <thead class="has-background-grey-lighter">
+            <tr>
+              <th>Principales Estrellas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Paolo Banchero</th>
+            </tr>
+              <tr>
+                  <th>Jalen Durren</th>
+              </tr>
+              <tr>
+                  <th>Jaden Ivey</th>
+              </tr>
+              <tr>
+                  <th>Jose Alvarado</th>
+              </tr>
+              <tr>
+                  <th>Josh Giddey</th>
+              </tr>
+              <tr>
+                  <th>Scottie Barnes</th>
+              </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -141,7 +136,7 @@
     </div>
 
     <div class="text-center text-white p-3 bg-secondary text-uppercase">
-      Alejandro Sanmartín con Bootstrap
+      Alejandro Sanmartín con bulma
     </div>
   </footer>
 

@@ -24,6 +24,7 @@
     background-image: url(../img/allstar/titulares.png);
     position: relative;
     grid-column: 1 / span 2;
+    margin-top: 10%;
   }
   
   #cancha div {
